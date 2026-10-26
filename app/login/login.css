@@ -1,0 +1,128 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 16px;
+  background-color: #f0f4f3;
+  font-family: Arial;
+}
+
+.login-card {
+  max-width: 420px;
+  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.login-card h1 {
+  margin: 0;
+  text-align: center;
+  color: #2c3e50;
+  font-size: 28px;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form label {
+  margin-bottom: 8px;
+  color: #34495e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5d1;
+  border-radius: 6px;
+  outline: none;
+  background-color: #ffffff;
+  font-size: 14px;
+}
+
+.form input:focus {
+  border-color: #198754;
+}
+
+.loginbtn {
+  width: 100%;
+  padding: 13px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 6px;
+  background-color: #198754;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.loginbtn:hover {
+  background-color: #17c876;
+}
+
+.reglink {
+  margin: 22px 0;
+  text-align: center;
+  color: #555555;
+  font-size: 14px;
+}
+
+.reglink a {
+  color: #198754;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+  color: #888888;
+  font-size: 12px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #dddddd;
+}
+
+.google-btn,
+.github-btn {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #d5d9dc;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #34495e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.google-btn:hover,
+.github-btn:hover {
+  background-color: #f5f7f7;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 24px 20px;
+  }
+}
